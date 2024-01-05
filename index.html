@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Frankincense</title>
-    </head>
-    <body>
-        <h1>Welcome to our Frankincense Kingdom!</h1>
-        <h2>Our website is under development. You can purchase our products on <button>Amazon</button></h2>
 
-    </body>
+<style>
+    .amazon {
+        background-color: rgb(247, 184, 67);
+        color: white;
+        border-color: rgb(247, 184, 67);
+        height: 23px;
+        border-radius: 100px;
+        cursor: pointer;
+        font-weight: bold;
+        border-style: solid;
+        transition: background-color 0.2s, color 0.2s; /* Updated transition properties */
+        transition: box-shadow .2s;
+      
+    }
+
+    .amazon:hover {
+        background-color: white;
+        color: rgb(247, 184, 67);
+        box-shadow: 3px 3px 50px black;
+    }
+
+    .amazon:active {
+        background-color: rebeccapurple;
+    }
+
+    .email:hover {
+        color: white;
+        background-color: aqua;
+        box-shadow: 3px 3px 50px black;
+    }
+
+    .email {
+        background-color: white;
+        border-color: aqua;
+        border-style: double;
+        width: 70px;
+        color: rgb(4, 78, 78);
+        cursor: pointer;
+        height: fit-content;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color .4s, color .3s ,
+        box-shadow .4s;
+    }
+</style>
+
+
+<html>
+
+<head>
+    <title>Frankincense</title>
+</head>
+
+<body class="body">
+    <h1>Welcome to our Frankincense Kingdom!</h1>
+    <h3>Our website is under development. You can purchase our products on
+        <a href="https://www.amazon.com/" target="_blank"><button class="amazon">
+                Amazon</button></a></h3>
+    <h3>If you're a wholesale buyer and/or distributor, kindly send us an
+        <a href="mailto:admin@frankincensekingdoman.com"><button class="email">
+            Email</button></a>
+    </h3>
+    
+
+</body>
+
 </html>
